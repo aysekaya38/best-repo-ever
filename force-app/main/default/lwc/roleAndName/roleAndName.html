@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title= "TWO WAY DATA BINDING">
+        <div class="slds-var-m-around_medium">
+            <lightning-input 
+            type="text" 
+            label="Enter your Name" 
+            onkeyup={handleChange}
+            value = "{title}">
+        </lightning-input>
+        <lightning-combobox
+        label="Enter your role"
+        options={roleChange}
+        value={role}
+        onchange={changeHandler}>
+    </lightning-combobox>
+
+        <div class="slds-var-m-top_small">I am {fullname} and my title is {title}</div>
+
+        </div>
+        
+    </lightning-card>
+    
+</template>

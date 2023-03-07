@@ -1,0 +1,18 @@
+[
+  {
+    "attributes": {
+      "type": "Account"
+    },
+    "Name": "Mona",
+    "Phone": "",
+    "AnnualRevenue": 0.90973819
+  },
+  {
+    "attributes": {
+      "type": "Account"
+    },
+    "Name": "Lisa",
+    "Phone": "93842084",
+    "Site": ""
+  }
+]

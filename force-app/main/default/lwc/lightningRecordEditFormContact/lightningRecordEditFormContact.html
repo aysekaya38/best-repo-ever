@@ -1,0 +1,41 @@
+<template>
+   <lightning-card style="color: purple" title="LIGHTNING RECORD EDIT- CONTACT" icon-name="standard: contact">
+    <div class ="slds-var-m-around_medium">
+        <lightning-avatar
+            class="slds-var-m-top_large" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg"></lightning-avatar>
+        <lightning-record-edit-form style="color: yellow" 
+        record-id={recordId}
+        object-api-name={objectName}
+        onsuccess={successHandler}>
+<div class="slds-grid slds-gutters">
+    <div class="slds-col">
+<lightning-input-field style="color: red" field-name={fields.firstname}></lightning-input-field>
+<lightning-input-field style="color: blue" field-name={fields.lastname}></lightning-input-field>
+<lightning-input-field style="color:brown" field-name={fields.title}></lightning-input-field>
+    </div>
+    <div class="slds-col">
+        <lightning-input-field style="color: aqua" field-name={fields.account}></lightning-input-field>
+<lightning-input-field style="color: cadetblue" field-name={fields.department}></lightning-input-field>
+<lightning-input-field style="color:darkgreen" field-name={fields.email}></lightning-input-field>
+
+    </div>
+</div>
+<div class="slds-align_absolute-center">
+    <lightning-button style="color: pink"
+    label="Cancel"
+    class="slds-var-m-right_x-small"
+    variant="neutral"
+    type="reset">
+</lightning-button>
+<lightning-button style="color: pink"
+label="Save"
+variant="brand"
+type="submit">
+</lightning-button>
+</div>
+    
+    </lightning-record-edit-form>
+
+    </div>
+   </lightning-card>
+</template>

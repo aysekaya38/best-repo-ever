@@ -1,0 +1,19 @@
+<template>
+    <lightning-card style="color:pink;
+    " title="CONTACT  INFO HOMEWORK">
+       <div class="slds-var-m-around_medium">
+        <lightning-avatar
+        class="slds-var-m-top_large" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg"></lightning-avatar>
+
+        <div class="slds-var-m-around_medium">
+            <template for:each={contacts} for:item="contact">
+                <div style="color:purple;"
+                key={contact.id}>{contact.firstname} is the {contact.lastname} is the {contact.title} of a company
+            </div>
+            </template>
+        </div>
+
+
+       </div>
+    </lightning-card>
+</template>

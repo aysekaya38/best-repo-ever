@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="TWO  WAY DATA BINDING">
+    <div class="slds-var-m-around_medium">
+        <lightning-input 
+        type="text" 
+        label="enter your city" 
+        
+        value = "{location.city}"
+        onkeyup={handleChange}>
+    </lightning-input>
+
+    <div class="slds-var-m-top_small">Hey, i do live in {location.city} </div>
+
+    </div>
+    
+</lightning-card>
+    
+</template>

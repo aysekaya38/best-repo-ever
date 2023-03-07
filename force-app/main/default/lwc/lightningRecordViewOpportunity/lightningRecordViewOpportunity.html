@@ -1,0 +1,29 @@
+<template>
+    <lightning-card style="color: PINK
+    " title="LIGHTNING RECORD VIEW FORM - OPPORTUNITY" icon-name="standard:Opportunity">
+        <div class="slds-var-m-around_medium">
+            <lightning-avatar
+            class="slds-var-m-top_large" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg"></lightning-avatar>
+            <lightning-record-view-form
+                object-api-name={objectName}
+                record-id={recordId}>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <lightning-output-field field-name={fields.Name}></lightning-output-field>
+                        <lightning-output-field field-name={fields.AccountId}></lightning-output-field>
+                       
+
+
+                    </div>
+                    <div class="slds-col">
+                        <lightning-output-field field-name={fields.CloseDate}></lightning-output-field>
+                        <lightning-output-field field-name={fields.Amount}></lightning-output-field>
+                       
+                        <lightning-output-field field-name={fields.OwnerId}></lightning-output-field> 
+                    </div>
+                </div>
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+    
+</template>
